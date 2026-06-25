@@ -4,6 +4,8 @@ A clickable, filterable file tree for [Kakoune](https://kakoune.org) — built i
 
 Opens in a tmux split to the left. Double-click a file to open it in Kakoune.
 
+![Sample image](img/sample-image.png)
+
 ## Requirements
 
 - [Rust](https://rustup.rs) toolchain (1.69+)
