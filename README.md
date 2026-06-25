@@ -20,18 +20,17 @@ Opens in a tmux split to the left. Double-click a file to open it in Kakoune.
 Add to your `kakrc`:
 
 ```kak
-plug "Westra126/kakfiletree" do %{
+plug "westra126/kakfiletree" do %{
     cargo build --release
     cp target/release/kakfiletree ~/.local/bin/kakfiletree
 }
-```
 
-Then run `:plug-install kakfiletree` in Kakoune.
+Then run `:plug-install` in Kakoune.
 
 ### Manual
 
 ```bash
-git clone https://github.com/Westra126/kakfiletree ~/Proyectos/kakfiletree
+git clone https://github.com/westra126/kakfiletree ~/Proyectos/kakfiletree
 cd ~/Proyectos/kakfiletree
 cargo build --release
 cp target/release/kakfiletree ~/.local/bin/kakfiletree
