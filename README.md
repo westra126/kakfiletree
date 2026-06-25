@@ -4,6 +4,12 @@ A clickable, filterable file tree for [Kakoune](https://kakoune.org) — built i
 
 Opens in a tmux split to the left. Double-click a file to open it in Kakoune.
 
+## Requirements
+
+- [Rust](https://rustup.rs) toolchain (1.69+)
+- [tmux](https://tmux.org)
+- [Kakoune](https://kakoune.org)
+
 ## Features
 
 - **File tree** with expandable/collapsible directories
@@ -55,9 +61,3 @@ From Kakoune inside tmux, run `:kakfiletree` to open the tree in a left split.
 ```kak
 set-option global kakfiletree_width "40"   # split width in columns
 ```
-
-## Requirements
-
-- [Rust](https://rustup.rs) toolchain
-- [tmux](https://tmux.org)
-- [Kakoune](https://kakoune.org)
