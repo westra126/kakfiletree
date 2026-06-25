@@ -22,10 +22,9 @@ Add to your `kakrc`:
 ```kak
 plug "westra126/kakfiletree" do %{
     cargo build --release
-    cp target/release/kakfiletree ~/.local/bin/kakfiletree
 }
 
-Then run `:plug-install` in Kakoune.
+Then run `:plug-install` in Kakoune. The binary stays inside the plugin directory.
 
 ### Manual
 
@@ -33,7 +32,7 @@ Then run `:plug-install` in Kakoune.
 git clone https://github.com/westra126/kakfiletree ~/Proyectos/kakfiletree
 cd ~/Proyectos/kakfiletree
 cargo build --release
-cp target/release/kakfiletree ~/.local/bin/kakfiletree
+# Binary at target/release/kakfiletree — stays inside the plugin dir
 ```
 
 Then add to your `kakrc`:

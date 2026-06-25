@@ -1,4 +1,4 @@
-declare-option -docstring "kakfiletree binary path" str kakfiletree_bin "%sh{echo $HOME/.local/bin/kakfiletree}"
+declare-option -docstring "kakfiletree binary path" str kakfiletree_bin "%sh{echo ${kak_source%%/rc/*}/target/release/kakfiletree}"
 declare-option -docstring "kakfiletree split width" str kakfiletree_width "40"
 
 define-command kakfiletree -docstring "Open file tree in tmux left split" %{
