@@ -25,7 +25,7 @@ define-command kakfiletree -docstring "Open file tree in terminal multiplexer si
                 RATIO="0.5"
             fi
             NEW_PANE=$(herdr pane split "$kak_client_env_HERDR_PANE_ID" \
-                --direction right --ratio "$RATIO" 2>/dev/null | \
+                --direction left --ratio "$RATIO" 2>/dev/null | \
                 sed -n 's/.*"pane_id":"\([^"]*\)".*/\1/p')
             if [ -n "$NEW_PANE" ]; then
                 echo "set-option global kakfiletree_pane_id '$NEW_PANE'" | kak -p "$kak_session"
